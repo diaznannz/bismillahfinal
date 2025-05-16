@@ -61,7 +61,7 @@
     function zoomModel(delta) {
       const scale = model.getAttribute('scale');
       const minScale = 0.5; // batas minimum ukuran
-      const maxScale = 5;   // batas maksimum ukuran
+      const maxScale = 7;   // batas maksimum ukuran
 
       const newScale = {
         x: Math.min(maxScale, Math.max(minScale, scale.x + delta)),
