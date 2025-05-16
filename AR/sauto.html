@@ -67,9 +67,9 @@
       const maxScale = 5;   // batas maksimum ukuran
 
       const newScale = {
-        x: Math.min(maxScale, Math.max(minScale, scale.x - delta)),
-        y: Math.min(maxScale, Math.max(minScale, scale.y - delta)),
-        z: Math.min(maxScale, Math.max(minScale, scale.z - delta))
+        x: Math.min(maxScale, Math.max(minScale, scale.x + delta)),
+        y: Math.min(maxScale, Math.max(minScale, scale.y + delta)),
+        z: Math.min(maxScale, Math.max(minScale, scale.z + delta))
       };
       model.setAttribute('scale', newScale);
     }
